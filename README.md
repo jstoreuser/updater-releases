@@ -5,7 +5,7 @@ O código-fonte é mantido separadamente. Os arquivos do jogo não ficam neste r
 
 ## Instalar e atualizar
 
-Versão pública atual: **1.0.49**.
+Versão pública atual: **1.0.50**.
 
 [Baixar o instalador para Windows x64](https://github.com/jstoreuser/updater-releases/releases/latest/download/Sims4Updater-setup.exe) · [Última versão e notas](https://github.com/jstoreuser/updater-releases/releases/latest)
 

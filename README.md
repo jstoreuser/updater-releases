@@ -5,15 +5,15 @@ O código-fonte é mantido separadamente. Os arquivos do jogo não ficam neste r
 
 ## Instalar e atualizar
 
-Versão pública atual: **1.0.50**.
+Versão pública atual: **1.0.51**.
 
 [Baixar o instalador para Windows x64](https://github.com/jstoreuser/updater-releases/releases/latest/download/Sims4Updater-setup.exe) · [Última versão e notas](https://github.com/jstoreuser/updater-releases/releases/latest)
 
-O cliente é instalado somente para seu usuário, com atalho no menu Iniciar e desinstalação nas configurações do Windows. Requer Microsoft Edge WebView2 Runtime; o .NET já acompanha o aplicativo.
+O cliente é instalado somente para seu usuário, com atalho no menu Iniciar e desinstalação nas configurações do Windows. O instalador inclui o .NET e prepara o Microsoft Edge WebView2 Runtime automaticamente quando necessário.
 
 Ao abrir, o Updater confere sua atualização, prepara a nova versão autenticada e reinicia antes de liberar as operações do jogo. Se houver falha, mantém a recuperação e oferece ajuda e nova tentativa.
 Enquanto aberto, também verifica atualizações e adia a preparação durante uma operação ativa. A saída normal usa o controlador de atualização; a versão anterior recente fica disponível para recuperação.
-Não são criados serviços, tarefas agendadas ou inicialização automática com o Windows.
+O Updater não cria serviços ou inicialização automática próprios. O WebView2 conserva o mecanismo de atualização da Microsoft.
 
 Se o aplicativo já estiver instalado, use sua atualização automática. O instalador inicial não sobrescreve uma instalação existente.
 O ZIP é uma alternativa portátil; instalações portáteis antigas precisam passar pelo instalador para habilitar o gerenciamento automático.

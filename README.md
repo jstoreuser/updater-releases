@@ -1,34 +1,51 @@
-# Sims 4 Updater — arquivos do cliente
+# Sims 4 Updater — downloads
 
-Este repositório distribui instaladores, atualizações e hashes do aplicativo.
-O código-fonte é mantido separadamente. Os arquivos do jogo não ficam neste repositório.
+**Versão recomendada: 1.0.52 · Windows x64**
+
+[**Baixar o instalador atual**](https://github.com/jstoreuser/updater-releases/releases/latest/download/Sims4Updater-setup.exe)
+· [Notas da versão](https://github.com/jstoreuser/updater-releases/releases/latest)
+· [Conferir SHA-256](https://github.com/jstoreuser/updater-releases/releases/latest/download/Sims4Updater-setup.exe.sha256)
+
+Este repositório distribui o cliente do projeto, suas atualizações e metadados
+públicos. O código-fonte é privado. Os arquivos do jogo não são hospedados aqui.
 
 ## Instalar e atualizar
 
-Versão pública atual: **1.0.51**.
+O instalador inclui .NET, bibliotecas nativas e o instalador oficial do WebView2,
+preparado quando necessário. A instalação é por usuário, com atalho no menu
+Iniciar e desinstalação pelo Windows.
 
-[Baixar o instalador para Windows x64](https://github.com/jstoreuser/updater-releases/releases/latest/download/Sims4Updater-setup.exe) · [Última versão e notas](https://github.com/jstoreuser/updater-releases/releases/latest)
+**Já tem o aplicativo? Abra-o para receber a atualização automática.** O
+instalador inicial não sobrescreve uma instalação existente. O ZIP da release é
+uma alternativa portátil; instalações antigas precisam do instalador para
+habilitar o gerenciamento automático.
 
-O cliente é instalado somente para seu usuário, com atalho no menu Iniciar e desinstalação nas configurações do Windows. O instalador inclui o .NET e prepara o Microsoft Edge WebView2 Runtime automaticamente quando necessário.
+A atualização do cliente verifica assinatura, hash, validade e sequência antes
+da troca. Uma falha mantém a recuperação. O programa não cria serviço ou
+inicialização automática próprios; o WebView2 mantém o atualizador da Microsoft.
 
-Ao abrir, o Updater confere sua atualização, prepara a nova versão autenticada e reinicia antes de liberar as operações do jogo. Se houver falha, mantém a recuperação e oferece ajuda e nova tentativa.
-Enquanto aberto, também verifica atualizações e adia a preparação durante uma operação ativa. A saída normal usa o controlador de atualização; a versão anterior recente fica disponível para recuperação.
-O Updater não cria serviços ou inicialização automática próprios. O WebView2 conserva o mecanismo de atualização da Microsoft.
+## Versões e recuperação
 
-Se o aplicativo já estiver instalado, use sua atualização automática. O instalador inicial não sobrescreve uma instalação existente.
-O ZIP é uma alternativa portátil; instalações portáteis antigas precisam passar pelo instalador para habilitar o gerenciamento automático.
+Use sempre o link de download acima. Mantemos a versão atual e uma anterior
+para recuperação orientada. A anterior não é a recomendação para uma nova
+instalação. Versões mais antigas têm seus downloads retirados depois do
+arquivamento privado e da validação da substituta.
 
-## Diagnóstico e componentes
+[Histórico](CHANGELOG.md) · [Política de releases](RELEASE-POLICY.md)
 
-A ajuda permite revisar e salvar um relatório local. Nada é enviado automaticamente; revise o conteúdo antes de compartilhar no [suporte](https://github.com/jstoreuser/updater-releases/issues).
-Os avisos de terceiros acompanham o ZIP, assim como o [inventário dos componentes](https://github.com/jstoreuser/updater-releases/releases/latest/download/components.spdx.json).
+As novas releases são imutáveis: os binários publicados não podem ser
+substituídos silenciosamente. Metadados de assinatura, raiz pública, inventário
+SPDX e checksums são públicos por projeto; chaves privadas não são distribuídas.
 
-## Integridade e Windows
+## Ajuda e segurança
 
-Os arquivos `.sha256` permitem comparar o download. `app-update.json`, `release.signed.json` e `root.json` são metadados públicos de autenticidade do aplicativo.
-As chaves privadas não são distribuídas. Essas assinaturas internas não são certificados Authenticode.
+[Dúvidas e problemas comuns](https://github.com/jstoreuser/updater-releases/issues)
+· [Relatar uma vulnerabilidade em privado](https://github.com/jstoreuser/updater-releases/security/advisories/new)
 
-O aplicativo e o instalador continuam sem assinatura pública de código. O GitHub não garante aceitação pelo SmartScreen ou Smart App Control.
-Se houver bloqueio, registre a mensagem exata para análise. Não altere o Defender, exclusões ou políticas de segurança para executar o cliente.
+O diagnóstico é local e nada é enviado automaticamente. Revise-o antes de
+compartilhar; não publique saves, Mods, dados pessoais, tokens ou credenciais.
 
-A validação em outros ambientes Windows e no jogo continua em andamento. Os ensaios locais não substituem essa homologação.
+O aplicativo e o instalador ainda não possuem certificado Authenticode. As
+assinaturas internas não equivalem à assinatura de código do Windows. Se houver
+bloqueio, registre a mensagem para análise sem desativar proteções do sistema.
+A homologação ampla em outros ambientes Windows e no jogo segue em andamento.

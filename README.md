@@ -20,6 +20,10 @@ instalador inicial não sobrescreve uma instalação existente. O ZIP da release
 uma alternativa portátil; instalações antigas precisam do instalador para
 habilitar o gerenciamento automático.
 
+O ZIP portátil aparece nos assets como `Updater-1.0.52-base-1.128.90.1030-pilot.zip`.
+Os arquivos automáticos “Source code” do GitHub contêm apenas a documentação
+deste repositório, não o aplicativo nem seu código-fonte privado.
+
 A atualização do cliente verifica assinatura, hash, validade e sequência antes
 da troca. Uma falha mantém a recuperação. O programa não cria serviço ou
 inicialização automática próprios; o WebView2 mantém o atualizador da Microsoft.
